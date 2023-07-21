@@ -1,0 +1,46 @@
+1. Escreva uma função que recebe uma lista de números inteiros e retorna uma lista apenas com os números primos presentes na lista.
+
+2. Crie uma função que recebe uma lista de strings e retorna um dicionário onde as chaves são as strings e os valores são o número de ocorrências de cada string na lista.
+
+3. Utilizando compreensão de listas, crie uma lista de todos os números pares entre 1 e 100 que sejam divisíveis por 6 e 9.
+
+4. Escreva uma função que recebe uma lista de tuplas, onde cada tupla contém o nome de um produto e o preço. A função deve retornar o produto mais caro da lista.
+
+5. Crie uma função que recebe uma lista de strings e retorna uma nova lista contendo apenas as strings que são palíndromos (lidas da mesma forma de trás para frente).
+
+6. Escreva uma função que recebe uma lista de dicionários, onde cada dicionário representa um aluno com as chaves "nome" (string) e "notas" (lista de números inteiros). A função deve retornar uma nova lista de dicionários contendo os alunos que tiveram média de notas maior que 7.
+
+
+Extra:
+
+Você foi contratado para desenvolver um sistema de processamento de votos para uma eleição. O sistema deve receber uma lista de votos contendo os números dos candidatos e produzir os seguintes resultados:
+
+a) O total de votos válidos (votos para candidatos existentes);
+b) O total de votos nulos (votos em candidatos não existentes);
+c) O total de votos em branco (votos em branco);
+d) O candidato vencedor (candidato com o maior número de votos válidos);
+e) A porcentagem de votos válidos para cada candidato.
+
+Considere que os votos válidos são os votos para candidatos cujo número está presente na lista de candidatos. Os votos nulos são os votos para candidatos cujo número não existe na lista de candidatos. Os votos em branco são votos que não possuem um número de candidato associado.
+
+Desenvolva uma função em Python que receba a lista de votos e a lista de candidatos e retorne os resultados descritos acima.
+
+
+Exemplo de entrada: 
+
+lista_votos = [10, 15, 23, 15, 0, 18, 10, 0, 12, 10]
+lista_candidatos = [10, 23, 18]
+
+Exemplo de saída:
+
+{
+    'votos_validos': 5,
+    'votos_nulos': 2,
+    'votos_em_branco': 3,
+    'candidato_vencedor': 10,
+    'porcentagem_votos_validos': {
+        10: 50.0,
+        23: 25.0,
+        18: 25.0
+    }
+}
